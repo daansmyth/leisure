@@ -1,0 +1,6 @@
+.carrossel__imagem{
+    width: 100vw;
+}
+.carousel-control-prev, .carousel-control-next{
+    display: none;
+}

@@ -1,0 +1,23 @@
+.resposabilidade{
+    margin: 2em 0;
+}
+.responsabilidade__conteudo{
+    background-size: cover;
+    background-image: url('../img/imagem/cidadeFundo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 2em 0;
+}
+.responsabilidade__conteudo__lista{
+    text-align: center;
+    padding: 0 1em;
+    gap: 1em;
+    color: white;
+}
+.responsabilidade__conteudo__lista-item{
+    padding: 1.5em 0;
+}
+.responsabilidade__conteudo__lista-texto{
+    font-size: 0.75em;
+}

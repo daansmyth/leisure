@@ -1,0 +1,32 @@
+.sobre{
+    padding: 1em 0;
+    background: var(--cor-background-destaque);
+}
+.sobre__conteudo{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+    gap: 1em;
+}
+.sobre__container-imagem{
+    text-align: center;
+}
+.sobre__imagem{
+    width: 100vw;
+}
+.sobre__conteudo__lista{
+    text-align: center;
+    padding: 0 1em;
+}
+.lista-lista{
+    display: flex;
+    margin-top: 0.75em;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5em;
+}
+
+.sobre__conteudo__lista-texto{
+    font-size: 0.75em;
+    line-height: 1.3;
+}
