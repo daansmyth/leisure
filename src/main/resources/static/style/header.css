@@ -75,7 +75,6 @@
 .container__pesquisa-barra{
     background: transparent;
     width: 60vw;
-    /* border-radius: 25px; */
     padding: 0.5em 1em;
     border: none;
     border-bottom: 1px solid lightgray;

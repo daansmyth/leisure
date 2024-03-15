@@ -42,42 +42,13 @@
                 <div class="swiper-wrapper">
                 <!-- Slides -->
                     <div class="swiper-slide">
-                        <div class="card">
-                            <h3 class="card__titulo">Saiba mais</h3>
-                            <img class="card__imagem" src="./img/anuncio/card/card04.png" alt="">
-                            <ul class="card__lista">
-                                <li class="card__lista-item">
-                                    
-                                        <p><i class="fa-light fa-brazilian-real-sign card__lista-icone"></i></p>
-                                    
-                                </li>
-                                <li class="card__lista-item">
-                                    
-                                        <p><i class="fa-light fa-bed card__lista-icone"></i></p>
-                                    
-                                </li>
-                                <li class="card__lista-item">
-                                    
-                                        <p><i class="fa-light fa-shower card__lista-icone"></i></p>
-                                    
-                                </li>
-                                <li class="card__lista-item">
-                                    
-                                        <p><i class="fa-light fa-circle-parking card__lista-icone"></i></p>
-                                    
-                                </li>
-                                <li class="card__lista-item">
-                                    
-                                        <p><i class="fa-sharp fa-light fa-location-dot card__lista-icone"></i></p>
-                                    
-                                </li>
-                            </ul>
-                        </div>
+
+                        <!------------------------------ CARD ANUNCIO ------------------------------>
+                        <div th:replace="~{fragments/destaques-card :: card}"></div>
+
                     </div>
                 </div>
-                <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
-                <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>   
@@ -216,7 +187,6 @@
 
         <section id="time" class="time">
             <div class="swiper">
-                <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -265,7 +235,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
