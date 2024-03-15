@@ -1,11 +1,15 @@
+const input = document.querySelectorAll('input');
+const option = document.querySelectorAll('select');
+const btnMenu = document.querySelector('#menu');
+const btnMenuIcone = document.querySelector('.container__rotulo i');
 const btnSubmenuIndex = document.querySelector('.btn-submenu');
 const btnSubmenuDownload = document.querySelector('.btn-download');
 const btnArrowReplaceCategoria = document.querySelector('.arrow-replace-categoria');
 const btnArrowReplaceDownload = document.querySelector('.arrow-replace-download');
 const btnLoginCadastro = document.querySelector('.container__usuario');
 
-const modalCadastrar = document.querySelector('.modal-cadastrar');
-const modalLogin = document.querySelector('.modal-login');
+const modalCadastrar = document.querySelector('.modal__cadastrar');
+const modalLogin = document.querySelector('.modal__login');
 const btnLogin = document.querySelector('.btn-login');
 const btnCadastrar = document.querySelector('.btn-cadastrar');
 
@@ -24,7 +28,14 @@ const listasubMenuDownload = document.querySelectorAll('.lista-menu__sublista-do
 const listaSubMenu = document.querySelectorAll('.lista-menu__sublista-item');
 const sobre = document.querySelectorAll('.sobre');
 const time = document.querySelectorAll('.time__card');
+const cardPremium = document.querySelectorAll('.premium__conteudo__box');
 const temaLocalStorage = localStorage.getItem('tema');
+
+document.addEventListener('keydown', event =>{
+    if(event.keyCode === 9){
+        event.preventDefault();
+    }
+})
 
 if(temaLocalStorage === 'temaDark'){
 	aplicarDark();
@@ -42,6 +53,12 @@ btnTrocarTema.addEventListener('change', function (){
 })
 
 function aplicarDark (){
+	input.forEach(tema =>{
+		tema.classList.toggle('tema-dark-font');
+	})
+	option.forEach(tema =>{
+		tema.classList.toggle('tema-dark-font');
+	})
 	iconSol.forEach(tema =>{
 		tema.classList.toggle('hidden');
 	})
@@ -78,10 +95,22 @@ function aplicarDark (){
 	time.forEach(tema => {
 		tema.classList.add('tema-dark-sobre');
 	})
+	cardPremium.forEach(tema => {
+		tema.classList.add('tema-dark-sobre');
+	})
+	if(modalCadastrar || modalLogin){
+		modalCadastrar.classList.add('tema-dark-sobre');
+		modalLogin.classList.add('tema-dark-sobre');
+	}else{}
 }
 
 function removerDark (){
-	
+	input.forEach(tema =>{
+		tema.classList.toggle('tema-dark-font');
+	})
+	option.forEach(tema =>{
+		tema.classList.toggle('tema-dark-font');
+	})
 	iconSol.forEach(tema =>{
 		tema.classList.toggle('hidden');
 	})
@@ -118,6 +147,13 @@ function removerDark (){
 	time.forEach(tema => {
 		tema.classList.remove('tema-dark-sobre');
 	})
+	cardPremium.forEach(tema => {
+		tema.classList.remove('tema-dark-sobre');
+	})
+	if(modalCadastrar || modalLogin){
+		modalCadastrar.classList.remove('tema-dark-sobre');
+		modalLogin.classList.remove('tema-dark-sobre');
+	}else{}
 }
 
 const swiper = new Swiper('.swiper', {
@@ -163,18 +199,18 @@ if(btnSubmenuIndex){
 		})
 		btnArrowReplaceCategoria.classList.toggle('fa-chevron-right');
 		btnArrowReplaceCategoria.classList.toggle('fa-chevron-down');
-	})
+	});
 }else{
 
-}
+};
 
 btnSubmenuDownload.addEventListener('click', () => {
 	listasubMenuDownload.forEach(click => {
 		click.classList.toggle('hidden');
-	})
+	});
 	btnArrowReplaceDownload.classList.toggle('fa-chevron-right');
 	btnArrowReplaceDownload.classList.toggle('fa-chevron-down');
-})
+});
 
 // const conteudoModal = document.querySelector('.modal-content');
 
@@ -182,16 +218,30 @@ if(btnLogin){
 	btnLogin.addEventListener('click', () =>{
 		modalCadastrar.classList.toggle('hidden')
 		modalLogin.classList.toggle('hidden')
-	})
+	});
 }else{
 
-}
+};
 
 if(btnCadastrar){
 	btnCadastrar.addEventListener('click', () =>{
 		modalCadastrar.classList.toggle('hidden')
 		modalLogin.classList.toggle('hidden')
-	})
+	});
 }else{
 
-}
+};
+
+btnMenu.addEventListener('change', () => {
+	btnMenuIcone.classList.toggle('fa-bars');
+	btnMenuIcone.classList.toggle('fa-xmark');
+});
+
+// btnMenu.forEach(trocar =>{
+// 	trocar.addEventListener('change', () => {
+// 		btnMenuIcone.forEach(icone =>{
+// 			icone.classList.toggle('fa-bars');
+// 			icone.classList.toggle('fa-xmark');
+// 		});
+// 	});
+// });

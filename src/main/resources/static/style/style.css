@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('header.css');
 @import url('carrossel.css');
 @import url('destaques.css');
@@ -15,9 +16,11 @@
 @import url('profile-anuncio.css');
 @import url('profile-meusdados.css');
 @import url('login-cadastro.css');
+@import url('modal.css');
 
 :root{
 	--font-principal: "Montserrat", sans-serif;
+	--font-secundaria: "Quicksand", sans-serif;
 	--cor-font-principal: #363636;
 	--cor-font-destaque: rgb(30, 144, 255);
 	/* --cor-background-destaque: linear-gradient(to bottom, #ededed, #FFFFFF); */
@@ -102,6 +105,10 @@ table {
 	background-color: var(--cor-font-principal);
 	color: white;
 	transition: 0.4s;
+}
+.tema-dark-font{
+	color: white;
+	font-family: var(--font-secundaria);
 }
 .tema-dark-sobre{
 	background-color: rgb(74, 74, 74);

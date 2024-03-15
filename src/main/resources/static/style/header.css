@@ -73,11 +73,16 @@
     margin-left: 0.5em;
 }
 .container__pesquisa-barra{
+    background: transparent;
     width: 60vw;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     padding: 0.5em 1em;
     border: none;
+    border-bottom: 1px solid lightgray;
     font-family: var(--cor-font-principal);
+}
+.container__pesquisa-barra:focus{
+    outline: 0;
 }
 .container__pesquisa-barra::placeholder{
     text-align: center;

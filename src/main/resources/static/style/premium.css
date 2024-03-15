@@ -53,7 +53,7 @@
     font-size: 2em;
     margin: 1em;
 }
-.box-texto-price-pessoal{
+.box-texto-price > b{
     font-weight: 400;
     color: gray;
 }
