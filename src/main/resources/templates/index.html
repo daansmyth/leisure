@@ -39,18 +39,19 @@
 
         <section class="destaques">
             <div class="swiperDestaques">
-                <div class="swiper-wrapper">
-                <!-- Slides -->
-                    <div class="swiper-slide">
+                <div class="swiper-wrapper destaques__swiper__conteudo">
+                    <!-- <div class="swiper-slide"> -->
+                    <!------------------------------ CARD ANUNCIO ------------------------------>
+                    <!---------------- INSERIR O FRAGMENT DO ANUNCIO ABAIXO -------------------->
 
-                        <!------------------------------ CARD ANUNCIO ------------------------------>
-                        <div th:replace="~{fragments/destaques-card :: card}"></div>
+                    <div th:replace="~{fragments/destaques-card :: card}"></div>
 
-                    </div>
+                    <!----------------------------- EXEMPLO ACIMA ------------------------------>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="destaques__swiper">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>   
         </section>
 

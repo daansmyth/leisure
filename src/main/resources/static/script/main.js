@@ -172,7 +172,11 @@ const swiper = new Swiper('.swiper', {
 		768: {
 		  slidesPerView: 4,
 		//   spaceBetween: 30
-		}
+		},
+		1024: {
+			slidesPerView: 5,
+		  //   spaceBetween: 30
+		  }
 	},
 	pagination: {
 		el: '.swiper-pagination',
@@ -197,7 +201,11 @@ const swiperDestaques = new Swiper('.swiperDestaques', {
 		768: {
 		  slidesPerView: 3,
 		  spaceBetween: 30
-		}
+		},
+		1024: {
+			slidesPerView: 4,
+			spaceBetween: 30
+		  }
 	},
 	pagination: {
 	  el: '.swiper-pagination',

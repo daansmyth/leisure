@@ -81,6 +81,7 @@ table {
     text-transform: uppercase;
     color: var(--cor-font-destaque);
 	margin: 2em 0;
+	filter: drop-shadow(5px 5px 10px var(--cor-font-destaque));
 }
 .titulo__secundario::after{
     content: '';
