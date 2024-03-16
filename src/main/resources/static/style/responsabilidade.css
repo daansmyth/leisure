@@ -12,7 +12,6 @@
 .responsabilidade__conteudo__lista{
     text-align: center;
     padding: 0 1em;
-    gap: 1em;
     color: white;
 }
 .responsabilidade__conteudo__lista-item{
@@ -20,4 +19,16 @@
 }
 .responsabilidade__conteudo__lista-texto{
     font-size: 0.75em;
+}
+
+@media screen and (min-width: 768px){
+    .responsabilidade__conteudo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .responsabilidade__conteudo__lista{
+        display: flex;
+        width: 90vw;
+    }
 }

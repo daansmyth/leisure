@@ -29,6 +29,7 @@ const listaSubMenu = document.querySelectorAll('.lista-menu__sublista-item');
 const sobre = document.querySelectorAll('.sobre');
 const time = document.querySelectorAll('.time__card');
 const cardPremium = document.querySelectorAll('.premium__conteudo__box');
+const bgResponsabilidade = document.querySelectorAll('.responsabilidade__conteudo');
 const temaLocalStorage = localStorage.getItem('tema');
 
 document.addEventListener('keydown', event =>{
@@ -102,6 +103,9 @@ function aplicarDark (){
 		modalCadastrar.classList.add('tema-dark-sobre');
 		modalLogin.classList.add('tema-dark-sobre');
 	}else{}
+	bgResponsabilidade.forEach(tema =>{
+		tema.setAttribute('style', 'background-image: url("../img/imagem/cidadeFundo.png")');	
+	})
 }
 
 function removerDark (){
@@ -154,12 +158,22 @@ function removerDark (){
 		modalCadastrar.classList.remove('tema-dark-sobre');
 		modalLogin.classList.remove('tema-dark-sobre');
 	}else{}
+	bgResponsabilidade.forEach(tema =>{
+		tema.setAttribute('style', 'background-image: url("../img/imagem/cidadeFundo3.png")');	
+	})
 }
 
 const swiper = new Swiper('.swiper', {
-	spaceBetween: 20,
-		slidesPerView: 3,
+	// spaceBetween: 20,
+	slidesPerView: 3,
 	loop: false,
+	breakpoints: {
+		// when window width is >= 640px
+		768: {
+		  slidesPerView: 4,
+		//   spaceBetween: 30
+		}
+	},
 	pagination: {
 		el: '.swiper-pagination',
 	},
@@ -178,6 +192,13 @@ const swiperDestaques = new Swiper('.swiperDestaques', {
 	spaceBetween: 20,
  	slidesPerView: 2,
 	loop: true,
+	breakpoints: {
+		// when window width is >= 640px
+		768: {
+		  slidesPerView: 3,
+		  spaceBetween: 30
+		}
+	},
 	pagination: {
 	  el: '.swiper-pagination',
 	},

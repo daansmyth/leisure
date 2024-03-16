@@ -1,6 +1,6 @@
 <!------------------------------ CABEÇALHO GERAL------------------------------>
 <header th:fragment="cabecalho" class="cabecalho">
-    <div class="cabecalho__container">
+    <nav class="cabecalho__container">
         <div class="container_hamburguer">
             <input type="checkbox" id="menu">
             <label for="menu">
@@ -13,9 +13,9 @@
                     <a class="container__link" href="/">Home</a>
                 </li>
                 <li class="lista-menu__item btn-submenu">
-                    <span>Categorias</span>
+                    <span>Categorias <i class="arrow-replace-categoria fa-solid fa-sm fa-chevron-right"></i></span>
                     <span>
-                        <i class="arrow-replace-categoria fa-solid fa-sm fa-chevron-right"></i>
+                        
                     </span>
                     <ul class="lista-menu__sublista-categoria hidden">
                         <li class="lista-menu__sublista-item">
@@ -59,9 +59,9 @@
                     <a class="container__link" href="/duvidas">Dúvidas</a>
                 </li>
                 <li class="lista-menu__item btn-download">
-                    <span>Nosso App</span>
+                    <span>Nosso App <i class="arrow-replace-download fa-solid fa-sm fa-chevron-right"></i></span>
                     <span>
-                        <i class="arrow-replace-download fa-solid fa-sm fa-chevron-right"></i>
+                        
                     </span>
                     <ul class="lista-menu__sublista-download hidden">
                         <li class="lista-menu__sublista-item">
@@ -84,11 +84,11 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </nav>
     <div class="container__pesquisa">
         <input class="container__pesquisa-barra" type="search" name="pesquisa" id="pesquisa" placeholder="Digite sua pesquisa">
     </div>
-    <nav class="cabecalho__navegacao">
+    <div class="cabecalho__navegacao">
         <span class="container__rotulo">
             <div class="container__usuario" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <i class="fa-light fa-circle-user fa-2xl"></i>
@@ -172,7 +172,7 @@
                 </div>
             </div>
         </span>
-    </nav>
+    </div>
 </header>
 
 <!------------------------------ CABEÇALHO PERFIL ------------------------------>

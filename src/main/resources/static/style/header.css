@@ -30,7 +30,7 @@
     margin-top: 16px;
     z-index: 2;
     padding-bottom: 1em;
-}
+}   
 .btn-submenu > span, .btn-download > span{
     font-weight: 700;
     margin: 1em 0 0.25em 0;
@@ -85,4 +85,40 @@
 }
 .container__pesquisa-barra::placeholder{
     text-align: center;
+}
+
+/* -------------------------------------- MEDIA SCREEN MIN 768px -------------------------------------- */
+@media screen and (min-width: 768px){
+    .cabecalho{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .container__rotulo{
+        display: none;
+    }
+    .lista-menu{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100vw;
+    }
+    .lista-menu__item{
+        padding: 0.75em 0.5em;
+    }
+    .lista-menu__sublista-categoria, .lista-menu__sublista-download{
+        width: auto;
+        position: absolute;
+        border-radius: 10px;
+    }
+    .lista-menu__sublista-item{
+        padding: 0.75em 1em 0.75em 0.75em;
+    }
+    
+}
+/* -------------------------------------- MEDIA SCREEN MIN 1024px -------------------------------------- */
+@media screen and (min-width: 1024px){
+    .lista-menu__item{
+        font-size: 1em;
+    }
 }
