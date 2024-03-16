@@ -11,10 +11,13 @@
 
 /* -------------------------------------- MEDIA SCREEN MIN 768px -------------------------------------- */
     @media screen and (min-width: 768px){
+    .especialidade__conteudo{
+        display: flex;
+        justify-content: center;
+    }
     .especialidade__conteudo__lista{
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         justify-content: center;
         column-gap: 2em;
     }
@@ -27,13 +30,15 @@
 
 /* -------------------------------------- MEDIA SCREEN MIN 1024px -------------------------------------- */
 @media screen and (min-width: 1024px){
+    
     .especialidade__conteudo__lista{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1em;
     }
     .especialidade__conteudo__lista-item{
         padding: 1em;
-        width: 175px;
+        width: 185px;
         line-height: 1.2;
         overflow: hidden;
     }

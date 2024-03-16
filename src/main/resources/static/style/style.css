@@ -92,6 +92,7 @@ table {
 .titulo__terciario{
     text-transform: uppercase;
     margin: 1em 0;
+	font-size: 1em;
     font-weight: 600;
 }
 
@@ -113,4 +114,13 @@ table {
 .tema-dark-sobre{
 	background-color: rgb(74, 74, 74);
 	transition: 0.4s;
+}
+
+@media screen and (min-width: 1024px){
+	.titulo__secundario{
+		font-size: 2.5em;
+	}
+	.titulo__terciario{
+		font-size: 1.25em;
+	}
 }
