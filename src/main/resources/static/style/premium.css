@@ -59,6 +59,7 @@
 }
 .premium__conteudo__box{
     margin-top: 1em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
 }
 .premium__conteudo__box-lista{
     text-align: center;
@@ -99,4 +100,39 @@
 .premium__tabela-dados{
     line-height: 3;
     padding: 0 1em;
+}
+
+@media screen and (min-width: 768px){
+    .premium__conteudo__pacotes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+        padding: 0 1em;
+    }
+    .premium__tabela{
+        margin: 5em 0;
+    }
+}
+@media screen and (min-width: 1024px){
+    .titulo__principal{
+        font-size: 2em;
+    }
+    .premium__conteudo-texto{
+        font-size: 1em;
+    }
+    .premium__conteudo__lista-item{
+        font-size: 1em;
+    }
+    .box-texto-price{
+        font-size: 2em;
+    }
+    .premium__conteudo__box-item{
+        font-size: 1em;
+    }
+    .premium__conteudo__box-link{
+        font-size: 1em;
+    }
+    .premium__tabela__conteudo{
+        font-size: 1em;
+    }
 }

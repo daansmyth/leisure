@@ -168,7 +168,6 @@ const swiper = new Swiper('.swiper', {
 	slidesPerView: 3,
 	loop: false,
 	breakpoints: {
-		// when window width is >= 640px
 		768: {
 		  slidesPerView: 4,
 		//   spaceBetween: 30
@@ -197,7 +196,6 @@ const swiperDestaques = new Swiper('.swiperDestaques', {
  	slidesPerView: 2,
 	loop: true,
 	breakpoints: {
-		// when window width is >= 640px
 		768: {
 		  slidesPerView: 3,
 		  spaceBetween: 30
@@ -241,8 +239,6 @@ btnSubmenuDownload.addEventListener('click', () => {
 	btnArrowReplaceDownload.classList.toggle('fa-chevron-down');
 });
 
-// const conteudoModal = document.querySelector('.modal-content');
-
 if(btnLogin){
 	btnLogin.addEventListener('click', () =>{
 		modalCadastrar.classList.toggle('hidden')
@@ -265,12 +261,3 @@ btnMenu.addEventListener('change', () => {
 	btnMenuIcone.classList.toggle('fa-bars');
 	btnMenuIcone.classList.toggle('fa-xmark');
 });
-
-// btnMenu.forEach(trocar =>{
-// 	trocar.addEventListener('change', () => {
-// 		btnMenuIcone.forEach(icone =>{
-// 			icone.classList.toggle('fa-bars');
-// 			icone.classList.toggle('fa-xmark');
-// 		});
-// 	});
-// });

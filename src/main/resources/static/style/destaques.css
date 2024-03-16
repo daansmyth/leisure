@@ -96,19 +96,6 @@
 .card__lista-icone{
     padding: 0 0.5em;
 }
-/* .card__btn{
-    text-align: center;
-}
-.btn__saiba-mais{
-    width: 100%;
-    font-size: 0.75em;
-    padding: 0.5em 0.5em;
-    border-radius: 20px;
-    color: white;
-    background-color: lightskyblue;
-    text-decoration: none;
-    text-align: center;
-} */
 
 .swiper-button-prev, .swiper-button-next{
     display: none;
@@ -117,9 +104,6 @@
 @media screen and (min-width: 768px){
     .swiper-button-prev, .swiper-button-next{
     display: block;
-    }
-    .destaques__swiper__conteudo{
-        /* padding: 0 2em; */
     }
     .destaques__swiper{
         position: relative;
