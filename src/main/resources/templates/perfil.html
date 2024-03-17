@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<!------------------------------ HEAD ------------------------------>
+<!-- HEAD -->
 <head th:replace="~{fragments/head :: head}"></head>
 
 <body class="body">
-    <!------------------------------ TROCAR TEMA ------------------------------>
+    <!-- TROCAR TEMA -->
     <div th:replace="~{fragments/trocarTema :: trocarTema}"></div>
 
-    <!------------------------------ CABEÇALHO ------------------------------>
+    <!-- CABEÇALHO ---->
     <header th:replace="~{fragments/cabecalho :: perfil}"></header>
 
     <main class="main">
-        <!---------------------------- ANUNCIAR ---------------------------->
+        <!-- ANUNCIAR -->
         <section class="anunciar hidden">
             <form action="" class="anunciar__conteudo">
                 <div class="anunciar__conteudo__progresso-linha" >
@@ -228,7 +228,7 @@
             </form>
         </section>
         
-        <!---------------------------- MEUS ANUNCIOS ---------------------------->
+        <!-- MEUS ANUNCIOS -->
         <section class="anuncio hidden">
             <div class="anuncio__card">
                 <div class="anuncio__card__imagem">
@@ -294,7 +294,7 @@
             </div>
         </section>
 
-        <!---------------------------- MEUS DADOS ---------------------------->
+        <!-- MEUS DADOS -->
         <section class="meusdados hidden">
             <div class="meusdados__imagem">
                 <label for="meusdadosImagem"></label>
@@ -356,7 +356,7 @@
         </section>
     </main>
 
-    <!------------------------------ RODAPE ------------------------------>
+    <!-- RODAPE -->
     <footer th:replace="~{fragments/rodape :: rodape}"></footer>
 
 </body>
