@@ -22,7 +22,7 @@
 	--font-principal: "Montserrat", sans-serif;
 	--font-secundaria: "Quicksand", sans-serif;
 	--cor-font-principal: #363636;
-	--cor-font-destaque: rgb(30, 144, 255);
+	--cor-font-destaque: #1e90ff;
 	/* --cor-background-destaque: linear-gradient(to bottom, #ededed, #FFFFFF); */
 	--cor-barra-progresso: linear-gradient(to right, #1E90FF, #00FF00);
 	--cor-background-destaque: #ededed;
@@ -96,9 +96,17 @@ table {
 	font-size: 1em;
     font-weight: 600;
 }
-
-.btnTema{
-	margin-top: 1em;
+.trocar__tema img{
+	width: 5em;
+	filter: drop-shadow(5px 5px 5px var(--cor-font-destaque));
+}
+.trocar__tema{
+	margin: 1em 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	/* margin-top: 1em; */
 	text-align: center;
 	color: rgb(209, 209, 3);
 }

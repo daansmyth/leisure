@@ -11,6 +11,10 @@
 .container_hamburguer{
     display: block;
 }
+.container__usuario span{
+    display: none;
+}
+
 .container__rotulo, .container__rotulo__login{
     display: flex;
     padding: 1em;
@@ -99,6 +103,9 @@
     }
     .container__usuario{
         display: flex;
+        position: absolute;
+        right: 2em;
+        top: 2em;
         column-gap: 0.5em;
         align-items: center;
         color: white;
@@ -110,10 +117,13 @@
         background: var(--cor-font-destaque);
         box-shadow: 5px 5px 10px var(--cor-font-destaque);
     }
-    .container__usuario{
+    /* .container__usuario{
         position: absolute;
         right: 2em;
         top: 2em;
+    } */
+    .container__usuario span{
+        display: block;
     }
     .lista-menu{
         display: flex;
