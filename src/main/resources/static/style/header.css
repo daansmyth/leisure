@@ -91,7 +91,7 @@
     text-align: center;
 }
 
-/* -------------------------------------- MEDIA SCREEN MIN 768px -------------------------------------- */
+/*  MEDIA SCREEN MIN 768px  */
 @media screen and (min-width: 768px){
     .cabecalho{
         display: flex;
@@ -144,7 +144,7 @@
     }
     
 }
-/* -------------------------------------- MEDIA SCREEN MIN 1024px -------------------------------------- */
+/*  MEDIA SCREEN MIN 1024px  */
 @media screen and (min-width: 1024px){
     .container__pesquisa-barra{
         font-size: 1em;
@@ -165,7 +165,7 @@
         font-size: 1em;
     }
 }
-/* -------------------------------------- MEDIA SCREEN MIN 1920px -------------------------------------- */
+/*  MEDIA SCREEN MIN 1920px  */
 @media screen and (min-width: 1920px){
     .container__pesquisa-barra{
         font-size: 1.5em;

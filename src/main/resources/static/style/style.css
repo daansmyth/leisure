@@ -23,7 +23,6 @@
 	--font-secundaria: "Quicksand", sans-serif;
 	--cor-font-principal: #363636;
 	--cor-font-destaque: #1e90ff;
-	/* --cor-background-destaque: linear-gradient(to bottom, #ededed, #FFFFFF); */
 	--cor-barra-progresso: linear-gradient(to right, #1E90FF, #00FF00);
 	--cor-background-destaque: #ededed;
 }
@@ -106,7 +105,6 @@ table {
 	grid-template-columns: 1fr 1fr 1fr;
 	align-items: center;
 	justify-content: center;
-	/* margin-top: 1em; */
 	text-align: center;
 	color: rgb(209, 209, 3);
 }
