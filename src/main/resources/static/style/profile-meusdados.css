@@ -42,6 +42,7 @@
     border: none;
     border-bottom: 1px solid lightgray;
     margin: 2em 0;
+    background: transparent;
 }
 .meusdados__container__conteudo input:focus{
     outline: 0;

@@ -41,6 +41,7 @@
 .anuncio__card__conteudo input{
     width: 100%;
     border: none;
+    background: transparent;
 }
 .anuncio__card__conteudo input:focus{
     outline: 0;
