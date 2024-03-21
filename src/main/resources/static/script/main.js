@@ -248,8 +248,8 @@ btnSubmenuDownload.addEventListener('click', () => {
 
 if(btnLogin){
 	btnLogin.addEventListener('click', () =>{
-		modalCadastrar.classList.toggle('hidden')
-		modalLogin.classList.toggle('hidden')
+		modalCadastrar.classList.toggle('hidden');
+		modalLogin.classList.toggle('hidden');
 	});
 }else{
 
@@ -257,8 +257,8 @@ if(btnLogin){
 
 if(btnCadastrar){
 	btnCadastrar.addEventListener('click', () =>{
-		modalCadastrar.classList.toggle('hidden')
-		modalLogin.classList.toggle('hidden')
+		modalCadastrar.classList.toggle('hidden');
+		modalLogin.classList.toggle('hidden');
 	});
 }else{
 

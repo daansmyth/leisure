@@ -1,6 +1,6 @@
 const notCheckedBox = document.querySelector('#menu');
 
-var barra = document.querySelector('.anunciar__conteudo__progresso-barra')
+var barra = document.querySelector('.anunciar__conteudo__progresso-barra');
 const listaBtnAnterior = document.querySelectorAll('.anunciar__conteudo__botao-anterior');
 const listaBtnProximo = document.querySelectorAll('.anunciar__conteudo__botao-proximo');
 const formBox = document.querySelectorAll('.anunciar__conteudo__box');
@@ -24,7 +24,7 @@ listaBtnProximo.forEach(function (botao){
 			proximoForm();
 		}		
 	})
-})
+});
 listaBtnAnterior.forEach(function (botao){
 	botao.addEventListener('click', function (){
 		const index = Array.from(listaBtnAnterior).indexOf(this);
@@ -41,4 +41,4 @@ listaBtnAnterior.forEach(function (botao){
 			anteriorForm();
 		}
 	})
-})
+});
