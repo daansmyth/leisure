@@ -11,11 +11,19 @@
     row-gap: 2em;
     font-family: var(--font-principal);
 }
-.meusdados__imagem label{
+/* .meusdados__imagem label{
     box-shadow: 7px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     background-size: cover;
     background-image: url('../img/imagem/Danilo.jpg');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+} */
+.meusdados__imagem label span{
+    box-shadow: 7px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
@@ -25,7 +33,7 @@
     display: none;
 }
 .meusdados__container__conteudo{
-    margin: em 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
 }
@@ -37,4 +45,33 @@
 }
 .meusdados__container__conteudo input:focus{
     outline: 0;
+}
+
+@media screen and (min-width: 768px){
+    
+    .meusdados__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 0;
+    }
+    .meusdados__container__form{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1em;
+        margin-left: auto;
+        margin-bottom: 2em;
+    }
+    .meusdados__container__conteudo{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        column-gap: 0.5em;
+        margin: 0.5em 0;
+    }
+    .meusdados__container__conteudo input{
+        border: none;
+        margin: 0;
+    }
 }
