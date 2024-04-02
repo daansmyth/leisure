@@ -41,7 +41,7 @@
 .home{
     display: flex;
     justify-content: space-between;
-    padding: 1em 1em 1em 0.75em;
+    margin-top: 0.75em;
 }
 
 .btn-submenu > span, .btn-download > span{
@@ -159,6 +159,9 @@
     }
     .lista-menu__sublista-item{
         padding: 0.75em 1em 0.75em 0.75em;
+    }
+    .container__pesquisa{
+        display: block;
     }
     
 }
