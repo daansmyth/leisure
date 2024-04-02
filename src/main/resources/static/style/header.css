@@ -27,14 +27,23 @@
 
 .lista-menu{
     text-transform: uppercase;
-    display: none;
+    /* display: none; */
+    top: 0;
+    left: -600px;
     position: absolute;
     background-color: white;
     width: 60vw;
     margin-top: 16px;
     z-index: 2;
     padding-bottom: 1em;
-}   
+    transition: 0.5s;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em 1em 0.75em;
+}
+
 .btn-submenu > span, .btn-download > span{
     font-weight: 700;
     margin: 1em 0 0.25em 0;
@@ -67,7 +76,9 @@
 }
 
 #menu:checked ~ .lista-menu{
-    display: block;
+    /* display: block; */
+    left: 0;
+    transition: 0.5s;
 }
 .container__link{
     text-decoration: none;
@@ -75,6 +86,9 @@
 }
 .container__link i{
     margin-left: 0.5em;
+}
+.container__pesquisa{
+    display: none;
 }
 .container__pesquisa-barra{
     background: transparent;
@@ -115,7 +129,7 @@
         padding: 0 0.5em 0 0.25em;
         border-radius: 22px;
         background: var(--cor-font-destaque);
-        box-shadow: 5px 5px 10px var(--cor-font-destaque);
+        box-shadow: 3px 2px 10px var(--cor-font-destaque);
     }
     /* .container__usuario{
         position: absolute;
@@ -130,6 +144,10 @@
         justify-content: center;
         position: relative;
         width: 100vw;
+        left: 0;
+    }
+    .home label{
+        display: none;
     }
     .lista-menu__item{
         padding: 0.75em 0.5em;

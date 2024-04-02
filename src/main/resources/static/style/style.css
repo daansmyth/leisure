@@ -72,6 +72,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.hidden{
+    display: none;
+}
 
 .titulo__secundario{
     text-align: center;
@@ -100,13 +103,16 @@ table {
 	filter: drop-shadow(5px 5px 5px var(--cor-font-destaque));
 }
 .trocar__tema{
-	margin: 1em 1em;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	font-size: 0.75em;
+	margin: 1em;
+	/* display: grid; */
+	display: flex;
+	/* grid-template-columns: 1fr 1fr 1fr; */
+	
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	color: rgb(209, 209, 3);
+	/* color: rgb(209, 209, 3); */
 }
 
 .tema-dark{
@@ -121,6 +127,14 @@ table {
 .tema-dark-sobre{
 	background-color: rgb(74, 74, 74);
 	transition: 0.4s;
+}
+@media screen and (min-width: 768px){
+	.btnTema{
+		position: absolute;
+		left: 50%;
+		top: -4em;
+		font-size: 1em;
+	}
 }
 
 @media screen and (min-width: 1024px){
