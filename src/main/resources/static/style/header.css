@@ -146,6 +146,9 @@
         width: 100vw;
         left: 0;
     }
+    .home{
+        margin-top: 0em;
+    }
     .home label{
         display: none;
     }
