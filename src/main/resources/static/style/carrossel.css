@@ -1,11 +1,24 @@
 .carrossel__imagem{
-    width: 100vw;
+    height: 900px;
 }
 .carousel-control-prev, .carousel-control-next{
     display: none;
 }
 
 @media screen and (min-width: 768px){
+    .carrossel {
+        width: 1440px;
+    }
+    
+    .carousel-inner {
+        height: 800px;
+    }
+
+    .carrossel__imagem {
+        width: 1440px;
+        height: 700px;
+    }
+
     .carousel-control-prev, .carousel-control-next{
         display: block;
     }

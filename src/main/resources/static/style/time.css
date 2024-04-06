@@ -1,3 +1,8 @@
+.time .titulo__terceiro {
+    margin-top: 2em;
+    text-align: center;
+}
+
 .swiper{
     display: block !important;
 }
@@ -8,14 +13,14 @@
     padding: 1em 0;
 }
 .time__card{
-    margin: 0 0.75em;
+    margin: 0 0.25em;
     display: flex;
     flex-direction: column;
     width: auto;
-    height: auto;
+    min-height: 250px;
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 0 0.5em 2.5em 0.5em;
 }
 .time__card-imagem{

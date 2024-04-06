@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     row-gap: 2em;
-    font-family: var(--font-principal);
+    font-family: var(--font-family);
 }
 /* .meusdados__imagem label{
     box-shadow: 7px 10px 10px rgba(0, 0, 0, 0.5);
@@ -38,7 +38,7 @@
     flex-direction: column;
 }
 .meusdados__container__conteudo input{
-    font-family: var(--font-principal);
+    font-family: var(--font-family);
     border: none;
     border-bottom: 1px solid lightgray;
     margin: 2em 0;
@@ -61,7 +61,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 1em;
-        margin-left: auto;
+        /* margin-left: auto; */
         margin-bottom: 2em;
     }
     .meusdados__container__conteudo{

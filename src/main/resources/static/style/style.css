@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('header.css');
+@import url('botoes.css');
+@import url('estilizacoes.css');
 @import url('carrossel.css');
+@import url('pesquisa.css');
 @import url('destaques.css');
-@import url('procurados.css');
+@import url('fiador.css');
+@import url('como-comprar.css');
 @import url('sobre.css');
-@import url('especialidade.css');
-@import url('responsabilidade.css');
 @import url('time.css');
 @import url('trabalhe.css');
 @import url('footer.css');
@@ -19,12 +21,19 @@
 @import url('modal.css');
 
 :root{
-	--font-principal: "Montserrat", sans-serif;
+
 	--font-secundaria: "Quicksand", sans-serif;
 	--cor-font-principal: #363636;
 	--cor-font-destaque: #1e90ff;
 	--cor-barra-progresso: linear-gradient(to right, #1E90FF, #00FF00);
 	--cor-background-destaque: #ededed;
+
+	--font-family:"Montserrat", sans-serif;
+    --cor-primeira: #FFFFFF;
+    --cor-segunda: #9cc4e4;
+    --cor-terceira: #3a89c9;
+    --cor-quarta: #1b325f;
+    --cor-quinta: #f26c4f;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -53,8 +62,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
-	font-family: var(--font-principal);
+	/* line-height: 1; */
+	font-family: var(--font-family);
 	color: var(--cor-font-principal);
 }
 ol, ul {
@@ -76,27 +85,50 @@ table {
     display: none;
 }
 
-.titulo__secundario{
-    text-align: center;
+input, select {
+    font-family: var(--font-family);
+    padding: 0.5em 0;
+    width: 100%;
+    border: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select:focus, input:focus {
+    outline: 0;
+}
+
+input::placeholder {
+    position: absolute;
+    left: 0;
+}
+
+.titulo__segundo{
     font-weight: 700;
 	font-size: 1.25em;
     text-transform: uppercase;
-    color: var(--cor-font-destaque);
-	margin: 2em 0;
-	filter: drop-shadow(5px 5px 10px var(--cor-font-destaque));
 }
-.titulo__secundario::after{
+.titulo__segundo::after{
     content: '';
     display: block;
     width: 7%;
-    border-bottom: 1px solid var(--cor-font-destaque);
     margin: 0.5em auto;
 }
-.titulo__terciario{
+.titulo__terceiro{
     text-transform: uppercase;
-    margin: 1em 0;
 	font-size: 1em;
     font-weight: 600;
+}
+.titulo__quarto {
+    font-weight: 500;
+}
+
+.no-decoration {
+    text-decoration: none;
 }
 .trocar__tema img{
 	width: 5em;
@@ -105,14 +137,10 @@ table {
 .trocar__tema{
 	font-size: 0.75em;
 	margin: 1em;
-	/* display: grid; */
 	display: flex;
-	/* grid-template-columns: 1fr 1fr 1fr; */
-	
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	/* color: rgb(209, 209, 3); */
 }
 
 .tema-dark{
@@ -141,10 +169,10 @@ table {
 	.btnTema{
 		font-size: 1em;
 	}
-	.titulo__secundario{
+	.titulo__segundo{
 		font-size: 2.5em;
 	}
-	.titulo__terciario{
+	.titulo__terceiro{
 		font-size: 1.25em;
 	}
 }
@@ -153,10 +181,10 @@ table {
 	.btnTema{
 		font-size: 1.5em;
 	}
-	.titulo__secundario{
+	.titulo__segundo{
 		font-size: 3.25em;
 	}
-	.titulo__terciario{
+	.titulo__terceiro{
 		font-size: 2em;
 	}
 }

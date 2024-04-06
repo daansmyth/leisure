@@ -7,6 +7,12 @@ const formBox = document.querySelectorAll('.anunciar__conteudo__box');
 var progresso = 0;
 var i = 0;
 
+// IMAGEM PERFIL
+const id = document.getElementById("id_usuario").value;
+const imagemPerfil = document.querySelector('.meusdados__imagem label span');
+const nomeImagem = document.getElementById("nomeImagem").value;
+imagemPerfil.style.backgroundImage = "url('http://localhost:8080/usuario/imagem/" + id + "')";
+
 // NOVA FUNCAO DE PROXIMO/ANTERIOR
 
 listaBtnProximo.forEach(function (botao){

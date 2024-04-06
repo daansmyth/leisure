@@ -2,6 +2,12 @@
     padding: 1em 0;
     background: var(--cor-background-destaque);
 }
+
+.sobre .titulo__segundo {
+    margin: 1em 0;
+    text-align: center;
+}
+
 .sobre__conteudo{
     display: flex;
     flex-direction: column;
@@ -19,6 +25,12 @@
     text-align: center;
     padding: 0 1em;
 }
+
+.sobre__conteudo__lista-item {
+    margin: 1em 0;
+    line-height: 1.5;
+}
+
 .lista-lista{
     display: flex;
     margin-top: 0.75em;
@@ -29,7 +41,7 @@
 
 .sobre__conteudo__lista-texto{
     font-size: 0.75em;
-    line-height: 1.3;
+    line-height: 1.5;
 }
 
 /*  MEDIA SCREEN MIN 768px  */
