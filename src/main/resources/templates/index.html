@@ -3,8 +3,6 @@
 <!-- HEAD -->
 <head th:replace="~{fragments/head :: head}"></head>
 <body class="body">
-    <!-- TROCAR TEMA -->
-    <!-- <div th:replace="~{fragments/trocarTema :: trocarTema}"></div> -->
 
     <!-- CABEÇALHO -->
     <header th:replace="~{fragments/cabecalho :: cabecalho}"></header>
@@ -35,9 +33,8 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+              <section th:replace="~{fragments/pesquisa :: pesquisa}"></section>
         </section>
-
-        <section th:replace="~{fragments/pesquisa :: pesquisa}"></section>
         
         <section th:replace="~{fragments/destaques :: destaques}"></section>
         
@@ -106,8 +103,6 @@
                 </ul>
             </div>  
         </section>
-
-        
 
         <section id="time" class="time">
             <h3 class="titulo__terceiro">Nosso time</h3>

@@ -19,3 +19,12 @@
     font-weight: 600;
     font-size: 1em;
 }
+
+@media (min-width: 768px) {
+    .btn-primeiro {
+        padding: 1em 1.5em;
+        border-radius: 2em;
+        font-weight: 600;
+        font-size: 1em;
+    }
+}

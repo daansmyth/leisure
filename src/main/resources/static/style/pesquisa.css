@@ -6,6 +6,7 @@
     margin: 2em 0;
     text-align: center;
 }
+
 .pesquisa__container__formulario .titulo__quarto {
     margin: 0.75em 0.25em;
     display: flex;
@@ -64,10 +65,10 @@
 
 @media (min-width: 768px) {
     .pesquisa {
-        width: auto;
+        width: 40%;
         position: absolute;
-        left: 50px;
-        top: 250px;
+        left: 1em;
+        top: 300px;
         z-index: 2;
     }
 

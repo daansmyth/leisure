@@ -29,6 +29,7 @@
 	--cor-background-destaque: #ededed;
 
 	--font-family:"Montserrat", sans-serif;
+	--cor-hover: #F7F7F7;
     --cor-primeira: #FFFFFF;
     --cor-segunda: #9cc4e4;
     --cor-terceira: #3a89c9;
@@ -108,6 +109,7 @@ input::placeholder {
 }
 
 .titulo__segundo{
+	color: var(--cor-font-principal);
     font-weight: 700;
 	font-size: 1.25em;
     text-transform: uppercase;
@@ -119,11 +121,13 @@ input::placeholder {
     margin: 0.5em auto;
 }
 .titulo__terceiro{
+	color: var(--cor-font-principal);
     text-transform: uppercase;
 	font-size: 1em;
     font-weight: 600;
 }
 .titulo__quarto {
+	color: var(--cor-font-principal);
     font-weight: 500;
 }
 
