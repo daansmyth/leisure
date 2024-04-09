@@ -56,7 +56,7 @@
 .pesquisa__container__formulario-conteudo{
     display: flex;
     flex-direction: column;
-    font-size: 0.75em;
+    font-size: var(--font-size);
 }
 
 .pesquisa__container__formulario-botao {
@@ -68,7 +68,7 @@
         width: 40%;
         position: absolute;
         left: 1em;
-        top: 300px;
+        top: 250px;
         z-index: 2;
     }
 

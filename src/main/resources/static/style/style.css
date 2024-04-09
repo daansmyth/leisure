@@ -19,8 +19,9 @@
 @import url('profile-meusdados.css');
 @import url('login-cadastro.css');
 @import url('modal.css');
+@import url('resultado-pesquisa.css');
 
-:root{
+:root {
 
 	--font-secundaria: "Quicksand", sans-serif;
 	--cor-font-principal: #363636;
@@ -35,6 +36,7 @@
     --cor-terceira: #3a89c9;
     --cor-quarta: #1b325f;
     --cor-quinta: #f26c4f;
+
 }
 
 html, body, div, span, applet, object, iframe,
@@ -82,11 +84,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.hidden{
+.hidden {
     display: none;
 }
 
 input, select {
+
     font-family: var(--font-family);
     padding: 0.5em 0;
     width: 100%;
@@ -94,6 +97,7 @@ input, select {
 }
 
 select {
+
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -104,29 +108,37 @@ select:focus, input:focus {
 }
 
 input::placeholder {
+
     position: absolute;
     left: 0;
 }
 
-.titulo__segundo{
+.titulo__segundo {
+
 	color: var(--cor-font-principal);
     font-weight: 700;
-	font-size: 1.25em;
+	font-size: var(--titulo-segundo);
     text-transform: uppercase;
 }
-.titulo__segundo::after{
+
+.titulo__segundo::after {
+
     content: '';
     display: block;
     width: 7%;
     margin: 0.5em auto;
 }
-.titulo__terceiro{
+
+.titulo__terceiro {
+
 	color: var(--cor-font-principal);
     text-transform: uppercase;
-	font-size: 1em;
+	font-size: var(--titulo-terceiro);
     font-weight: 600;
 }
+
 .titulo__quarto {
+
 	color: var(--cor-font-principal);
     font-weight: 500;
 }
@@ -134,61 +146,39 @@ input::placeholder {
 .no-decoration {
     text-decoration: none;
 }
-.trocar__tema img{
-	width: 5em;
-	filter: drop-shadow(5px 5px 5px var(--cor-font-destaque));
-}
-.trocar__tema{
-	font-size: 0.75em;
-	margin: 1em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+
+@media (max-width: 767px) {
+
+	:root {
+		--font-size: 0.75em;
+		--titulo-segundo: 1em;
+		--titulo-terceiro: 0.85em;
+	}
 }
 
-.tema-dark{
-	background-color: var(--cor-font-principal);
-	color: white;
-	transition: 0.4s;
-}
-.tema-dark-font{
-	color: white;
-	font-family: var(--font-secundaria);
-}
-.tema-dark-sobre{
-	background-color: rgb(74, 74, 74);
-	transition: 0.4s;
-}
 @media screen and (min-width: 768px){
-	.btnTema{
-		position: absolute;
-		left: 50%;
-		top: -8em;
-		font-size: 1em;
+
+	:root {
+		--font-size: 1em;
+		--titulo-segundo: 1.25em;
+		--titulo-terceiro: 1.15em;
 	}
 }
 
 @media screen and (min-width: 1024px){
-	.btnTema{
-		font-size: 1em;
-	}
-	.titulo__segundo{
-		font-size: 2.5em;
-	}
-	.titulo__terceiro{
-		font-size: 1.25em;
+
+	:root {
+		--font-size: 1em;
+		--titulo-segundo: 1.25em;
+		--titulo-terceiro: 1.15em;
 	}
 }
 
 @media screen and (min-width: 1920px){
-	.btnTema{
-		font-size: 1.5em;
-	}
-	.titulo__segundo{
-		font-size: 3.25em;
-	}
-	.titulo__terceiro{
-		font-size: 2em;
+
+	:root {
+		--font-size: 1.25em;
+		--titulo-segundo: 1.5em;
+		--titulo-terceiro: 1.35em;
 	}
 }

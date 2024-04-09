@@ -21,6 +21,11 @@ public class controller {
 	public String getDuvidas() {
 		return "duvidas";
 	}
+
+	@GetMapping("/pesquisa")
+	public String getPesquisa() {
+		return "anuncio";
+	}
 	
 	@GetMapping("/perfil")
 	public String getPerfil(Model model) {

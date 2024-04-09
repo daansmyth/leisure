@@ -19,7 +19,7 @@
     justify-content: center;
     row-gap: 1em;
     line-height: 1.3;
-    font-size: 0.75em;
+    font-size: var(--font-size);
 }
 
 .destaques__container__conteudo a {
@@ -38,15 +38,17 @@
     .destaques__container {
         display: flex;
         flex-direction: row;
+        height: 600px;
     }
 
     .destaques__container-imagem img {
         width: 100%;
+        height: 600px;
+        object-fit: cover;
     }
 
     .destaques__container__conteudo {
-        margin: 1em;
+        width: 45vw;
         padding: 4em 1.5em 1em 1.5em;
-        font-size: 1em;
     }
 }

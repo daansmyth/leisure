@@ -6,7 +6,7 @@
     padding: 1.5em;
     border-radius: 2em;
     font-weight: 600;
-    font-size: 1em;
+    font-size: var(--font-size);
 }
 
 .btn-segundo {
@@ -17,14 +17,32 @@
     padding: 1.5em;
     border-radius: 2em;
     font-weight: 600;
-    font-size: 1em;
+    font-size: var(--font-size);
+}
+
+.logout__lista {
+    padding: 1em 1.25em;
+    background: var(--cor-hover);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border-radius: 10px;
+}
+
+.logout__item {
+    margin: 0.75em 0;
+}
+
+.logout__item a {
+    color: var(--cor-font-principal);
 }
 
 @media (min-width: 768px) {
     .btn-primeiro {
         padding: 1em 1.5em;
-        border-radius: 2em;
-        font-weight: 600;
-        font-size: 1em;
+    }
+
+    .btn-segundo {
+        padding: 1em 1.5em;
     }
 }
